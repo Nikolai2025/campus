@@ -1,0 +1,36 @@
+    /* Remove default margin and padding */
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Wrapper for full-screen image */
+    .background-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Full-screen background image */
+    .background-container img.background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Keeps aspect ratio and fills screen */
+        background-size: cover;
+    }
+
+    /* Logo styling */
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Places logo on top */
+        width: 335px;
+        height: 136px;
+    }

@@ -1,0 +1,150 @@
+
+body {
+    background-color: #1E4365;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+  }
+
+  .container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+
+  }
+button {
+    background-color: rgba(215,213, 209, 1);
+    color: #a3a19f;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+
+  p{
+    text-align: left;
+    color: rgb(191, 191, 191);
+  }
+ 
+  .social-login {
+    display: flex;
+    justify-content: center; /* Centrerer ikonerne horisontalt */
+    gap: 15px; /* Giver mellemrum mellem ikonerne */
+    margin: 20px 0; /* Tilføjer afstand over og under sektionen */
+}
+
+.social-login svg {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s, fill 0.2s;
+    border-radius: 50%;
+}
+
+  .footer {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .toggle-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: rgba(237, 125, 49,1);
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.toggle-text {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+.input-label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+    color: #B8C3CE;
+}
+
+.input-field {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
